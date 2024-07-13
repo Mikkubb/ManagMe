@@ -1,0 +1,6 @@
+{
+    "watch": ["src/scripts"],
+    "ext": ".ts",
+    "exec": "ts-node index.ts"
+  }
+  

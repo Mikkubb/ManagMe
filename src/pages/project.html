@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <div class="navbar-content">
+            <span id="user-info" class="navitem nav-link"></span>
+            <button id="logout-btn" class="navitem btn btn-outline-danger">Logout</button>
+            <button id="theme-toggle" class="navitem btn btn-secondary">Toggle Dark Mode</button>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div id="project-details">
+            <h1 id="project-name"></h1>
+            <h3 id="project-description"></h3>
+            <button id="back-home" class="btn btn-link" onclick="window.location.href='add-project.html'">Back to Home</button>
+            <div class="mt-4">
+                <h3>Add Story</h3>
+                <div class="form-group">
+                    <input type="text" id="story-name" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <textarea id="story-description" class="form-control" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <select id="story-priority" class="form-control">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="story-status" class="form-control">
+                        <option value="todo">To Do</option>
+                        <option value="doing">Doing</option>
+                        <option value="done">Done</option>
+                    </select>
+                </div>
+                <button id="add-story" class="btn btn-primary">Add Story</button>
+            </div>
+        </br>
+            <h2>Stories</h2>
+            <div id="todo-section" class="mt-4">
+                <h3>To Do</h3>
+                <div id="todo-list" class="project-item"></div>
+            </div>
+            <div id="doing-section" class="mt-4">
+                <h3>Doing</h3>
+                <div id="doing-list" class="project-item"></div>
+            </div>
+            <div id="done-section" class="mt-4">
+                <h3>Done</h3>
+                <div id="done-list" class="project-item"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/navbar.ts" type="module"></script>
+    <script src="../scripts/project.ts" type="module"></script>
+    <script type="module" src="../scripts/theme-toggle.ts"></script>
+</body>
+</html>

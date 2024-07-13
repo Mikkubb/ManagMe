@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+    <div id="task-detail">
+        <h1>Edit Task</h1>
+        <div>
+            <label for="task-name">Name:</label>
+            <input type="text" id="task-name" class="form-control">
+        </div>
+        <div>
+            <label for="task-description">Description:</label>
+            <textarea id="task-description" class="form-control"></textarea>
+        </div>
+        <div>
+            <label for="task-priority">Priority:</label>
+            <select id="task-priority" class="form-control">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+        <div>
+            <label for="task-status">Status:</label>
+            <select id="task-status" class="form-control">
+                <option value="todo">To Do</option>
+                <option value="doing">Doing</option>
+                <option value="done">Done</option>
+            </select>
+        </div>
+        <div>
+            <label for="task-start-date">Start Date:</label>
+            <input type="datetime-local" id="task-start-date" class="form-control">
+        </div>
+        <div>
+            <label for="task-end-date">End Date:</label>
+            <input type="datetime-local" id="task-end-date" class="form-control">
+        </div>
+        <div>
+            <label for="task-hours">Expected Execution Time (hours):</label>
+            <input type="number" id="task-hours" class="form-control">
+        </div>
+        <div>
+            <label for="task-expected-date">Expected Execution Date:</label>
+            <input type="date" id="task-expected-date" class="form-control">
+        </div>
+        <div>
+            <label for="task-owner">User Responsible:</label>
+            <select id="task-owner" class="form-control">
+                <option value="devops">DevOps</option>
+                <option value="developer">Developer</option>
+                <option value="No person assigned">No person assigned</option>
+            </select>
+        </div>
+        <button id="save-task" class="btn-primary">Save Task</button>
+        <a href="#" id="back-to-tasks" class="btn-primary">Back to Tasks</a>
+    </div>
+
+    <script src="../scripts/edit-task.ts" type="module"></script>
+    <script type="module" src="../scripts/theme-toggle.ts"></script>
+</body>
+</html>

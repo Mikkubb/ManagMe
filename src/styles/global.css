@@ -1,0 +1,312 @@
+/* src/styles/global.css */
+
+/* Define general styles for light and dark themes */
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Navbar style for light and dark themes */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar.light-theme .nav-link {
+    color: #000000;
+}
+
+.navbar.light-theme .btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.navbar.dark-theme {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.navbar.dark-theme .nav-link {
+    color: #ffffff;
+}
+
+.navbar.dark-theme .btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.navbar-content {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navbar links and buttons */
+.navitem {
+    margin-left: 20px;
+}
+
+/* Form controls */
+.form-control.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-control.dark-theme {
+    background-color: #343a40;
+    color: #ffffff;
+    border: 1px solid #666;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #00409a;
+}
+
+/* Button Edit */
+.edit-project, .edit-story, .edit-task {
+    background-color: #ffc107;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-project:hover, .edit-story:hover, .edit-task:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+/* Button Delete */
+.delete-project, .delete-story, .delete-task {
+    background-color: #dc3545;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-project:hover, .delete-story:hover, .delete-task:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Button Open */
+.open-project, .open-story, .task-details {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.open-project:hover, .open-story:hover, .task-details:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Style for project-item, story-item, task-item */
+.project-item, .story-item, .task-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-item.light-theme, .story-item.light-theme, .task-item.light-theme {
+    background-color: #ffffff;
+    border-color: #ddd;
+}
+
+.project-item.dark-theme, .story-item.dark-theme, .task-item.dark-theme {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+
+/* Style for project-details */
+#project-details {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--project-details-bg);
+    color: var(--project-details-color);
+}
+
+body.light-theme #project-details {
+    --project-details-bg: #ffffff;
+    --project-details-color: #333;
+}
+
+body.dark-theme #project-details {
+    --project-details-bg: #1e1e1e;
+    --project-details-color: #e0e0e0;
+}
+
+/* Style for sections todo, doing, done */
+#todo-section, #doing-section, #done-section {
+    margin-top: 20px;
+}
+
+/* Style for back buttons and save task button */
+#back-home, #back-to-stories, #back-to-tasks, #save-task {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    background: #007bff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#back-home:hover, #back-to-stories:hover, #back-to-tasks:hover {
+    background: #0056b3;
+}
+
+/* Style for task-details.html */
+#task-details {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--task-details-bg);
+    color: var(--task-details-color);
+}
+
+#task-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--task-details-bg);
+    color: var(--task-details-color);
+}
+
+body.light-theme #task-details {
+    --task-details-bg: #ffffff;
+    --task-details-color: #333;
+}
+
+body.dark-theme #task-details {
+    --task-details-bg: #1e1e1e;
+    --task-details-color: #e0e0e0;
+}
+
+#task-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#task-details div {
+    margin-bottom: 10px;
+}
+
+#task-details span {
+    font-weight: bold;
+}
+
+#back-to-tasks {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-tasks:hover {
+    background-color: #0056b3;
+}
+
+/* Style for login form */
+#login-form {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--login-form-bg);
+    color: var(--login-form-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme #login-form {
+    --login-form-bg: #ffffff;
+    --login-form-color: #333;
+}
+
+body.dark-theme #login-form {
+    --login-form-bg: #1e1e1e;
+    --login-form-color: #e0e0e0;
+}
+
+#login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#login-form div {
+    margin-bottom: 10px;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}

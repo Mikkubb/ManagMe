@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Story - ManagMe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/global.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Edit Story</h1>
+        <div class="form-group">
+            <label for="story-name">Name:</label>
+            <input type="text" id="story-name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="story-description">Description:</label>
+            <textarea id="story-description" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="story-priority">Priority:</label>
+            <select id="story-priority" class="form-control">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="story-status">Status:</label>
+            <select id="story-status" class="form-control">
+                <option value="todo">To Do</option>
+                <option value="doing">Doing</option>
+                <option value="done">Done</option>
+            </select>
+        </div>
+        <button id="save-story" class="btn btn-primary">Save</button>
+    </div>
+    <script type="module" src="../scripts/edit-story.ts"></script>
+    <script type="module" src="../scripts/theme-toggle.ts"></script>
+</body>
+</html>
